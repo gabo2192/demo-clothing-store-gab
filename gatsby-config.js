@@ -25,8 +25,8 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
-        short_name: `starter`,
+        name: `shopify demo`,
+        short_name: `shop-app`,
         start_url: `/`,
         background_color: `#663399`,
         theme_color: `#663399`,
@@ -63,20 +63,8 @@ module.exports = {
         '~': path.join(__dirname, 'src/'),
       },
     },
-    {
-      resolve: `gatsby-plugin-manifest`,
-      options: {
-        name: `Shopify Store APP`,
-        short_name: `Shopify App`,
-        start_url: `/`,
-        background_color: `#f7f0eb`,
-        theme_color: `#a2466c`,
-        display: `standalone`,
-        icon: `src/images/gatsby-icon.png`,
-      },
-    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
-    // 'gatsby-plugin-offline',
+    'gatsby-plugin-offline',
   ],
 };
